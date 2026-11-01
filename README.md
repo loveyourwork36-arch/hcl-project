@@ -27,10 +27,10 @@ service to use the following start command:
 streamlit run main.py --server.address=0.0.0.0 --server.port=$PORT --server.headless=true
 ```
 
-The repository includes a `Procfile` with this command for platforms that support
-Procfiles. Do not configure `main.py` as a Flask, FastAPI, or generic Python
-entry point; it intentionally does not export an `app`, `application`, or `handler`
-variable.
+For Streamlit Community Cloud, set the **Main file path** to `main.py` and leave
+the app type as Streamlit. Do not configure `main.py` as a Flask, FastAPI, or
+generic Python entry point; it intentionally does not export an `app`,
+`application`, or `handler` variable.
 
 ---
 
